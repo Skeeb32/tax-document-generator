@@ -1,21 +1,27 @@
-# Tax Document Studio
+# Operations & Tax Studio
 
-A private-by-design, browser-only starter for organizing tax information into printable worksheets. Choose a jurisdiction, select a template, enter records and amounts, preview the document, and use your browser's print dialog to save a PDF.
+A browser-only operations workspace for organizing tax source records, estimating investor distribution allocations, and tracking acquisition/property launch readiness.
 
 ## Run it
 
 Open `index.html` in a modern browser. No build step, server, account, or external dependency is required.
 
-## Included starter catalog
+## Workflows
 
-The catalog includes individual organizers and business income/expense summaries for the United States, Canada, United Kingdom, Australia, India, New Zealand, Ireland, Germany, France, and Japan. US examples include W-2, 1099-INT, 1099-NEC information worksheets, a self-employment summary, and a charitable contribution record. “Other / custom” offers a general worksheet.
+- **Tax document engine:** Select a jurisdiction and worksheet type, assemble financial or investor source records, import a simple CSV, validate descriptions and non-negative amounts, flag possible duplicate rows, and create a printable review draft. Distribution estimates can be added as tax source records.
+- **Investor distributions:** Enter a gross distribution, reserve, currency, and investor ownership percentages. The tool checks that investor names are unique and shares total 100%, estimates rounded allocations, and compares optional paid amounts to the estimate.
+- **Acquisition & property launch:** Track readiness items, owners, status, launch date, and open questions. Generate and print an internal launch summary.
 
-These are informational organizers and drafts. The app does not calculate tax liability, reproduce official government forms, provide tax advice, or submit a filing. Verify all requirements and figures with the relevant tax authority or a qualified tax professional.
+## Privacy and limits
 
-## Privacy
+All entered values and imported CSV contents are processed in the browser page. There is no backend, analytics, local storage, or network call. Values are discarded when the page is closed or refreshed. Avoid entering government identifiers, bank details, or other highly sensitive data.
 
-All entered values are processed in the browser page. The starter has no backend, analytics, local storage, or network calls. Values are discarded when the page is closed or refreshed. Avoid entering Social Security numbers, tax identification numbers, bank details, or other highly sensitive identifiers.
+The tax worksheets are informational organizers, not official government forms or tax advice. The distribution workflow performs only a simple ownership-percentage allocation; it does not apply investor agreements, distribution waterfalls, tax withholding, fees, or approval policies. It does not initiate or record payments. The launch checklist is an internal planning aid. Verify outputs with the responsible finance, tax, legal, and operations teams.
+
+## CSV format
+
+Use one record per line with columns `description,amount,source`. A header row is optional. Amounts should be plain numeric values; source may be `Financial record`, `Investor distribution`, `Bank statement`, `Brokerage statement`, or another value (which is grouped as `Other`). CSV parsing supports quoted commas and escaped quotes within a line.
 
 ## Extend the catalog
 
-Add template metadata to the `documents` array in `index.html`. Each entry uses a jurisdiction ID from `jurisdictions` and includes a title, description, category, and badge. The shared worksheet layout can be extended with template-specific fields as needed.
+Edit the `jurisdictions`, `templates`, and `launchDefaults` arrays in `index.html` to add template choices, jurisdictions, or launch checklist items. The app is a static prototype; it does not connect to financial systems or operational software.
