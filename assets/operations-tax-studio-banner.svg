@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+  <title id="title">Operations &amp; Tax Studio</title>
+  <desc id="desc">A calm operations workspace connecting tax records, investor distributions, and acquisition-to-launch planning.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f2e9"/>
+      <stop offset="1" stop-color="#e9eee5"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#315d48"/>
+      <stop offset="1" stop-color="#183b2c"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#243a2c" flood-opacity=".11"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="440" rx="28" fill="url(#paper)"/>
+  <circle cx="1195" cy="80" r="190" fill="#dce5d9" opacity=".55"/>
+  <circle cx="1340" cy="390" r="150" fill="#f1dfbf" opacity=".56"/>
+  <path d="M0 360 C240 292 388 446 634 364 S1035 264 1440 340" fill="none" stroke="#c3d1c3" stroke-width="2" opacity=".65"/>
+  <g transform="translate(82 72)">
+    <rect width="58" height="58" rx="19" fill="url(#green)"/>
+    <text x="29" y="38" fill="#f7f4eb" font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">OT</text>
+    <text x="77" y="25" fill="#355744" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.4">THE OPERATIONS DESK</text>
+    <text x="0" y="140" fill="#19281f" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="-1.8">Move from raw details</text>
+    <text x="0" y="202" fill="#19281f" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="-1.8">to a ready review.</text>
+    <text x="2" y="246" fill="#53645a" font-family="Arial, sans-serif" font-size="19">Tax records. Investor distributions. Acquisition-to-launch planning.</text>
+  </g>
+  <g filter="url(#shadow)" transform="translate(1000 78)">
+    <rect width="356" height="284" rx="22" fill="#fffefa" stroke="#e6e5dc"/>
+    <text x="27" y="38" fill="#6a786d" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">CONNECTED WORKFLOWS</text>
+    <g font-family="Arial, sans-serif">
+      <rect x="25" y="58" width="306" height="54" rx="12" fill="#f5f3ec"/>
+      <circle cx="51" cy="85" r="12" fill="#dce8dd"/><text x="51" y="89" fill="#315d48" font-size="10" font-weight="700" text-anchor="middle">01</text>
+      <text x="75" y="82" fill="#24352a" font-size="14" font-weight="700">Tax document engine</text><text x="75" y="99" fill="#69756c" font-size="11">Organize records for review</text>
+      <path d="M51 112v18" stroke="#a2b3a4" stroke-width="2" stroke-dasharray="3 4"/>
+      <rect x="25" y="132" width="306" height="54" rx="12" fill="#f5f3ec"/>
+      <circle cx="51" cy="159" r="12" fill="#f1e4ca"/><text x="51" y="163" fill="#875c24" font-size="10" font-weight="700" text-anchor="middle">02</text>
+      <text x="75" y="156" fill="#24352a" font-size="14" font-weight="700">Investor distributions</text><text x="75" y="173" fill="#69756c" font-size="11">Estimate and reconcile amounts</text>
+      <path d="M51 186v18" stroke="#a2b3a4" stroke-width="2" stroke-dasharray="3 4"/>
+      <rect x="25" y="206" width="306" height="54" rx="12" fill="#f5f3ec"/>
+      <circle cx="51" cy="233" r="12" fill="#e7ded9"/><text x="51" y="237" fill="#705343" font-size="10" font-weight="700" text-anchor="middle">03</text>
+      <text x="75" y="230" fill="#24352a" font-size="14" font-weight="700">Acquisition &amp; property launch</text><text x="75" y="247" fill="#69756c" font-size="11">Track diligence through readiness</text>
+    </g>
+  </g>
+</svg>
